@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="E:\Garmin\ParviWatch\ParviWatch\manifest.xml"/>
+<pcToLineNum>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="1" lineNum="10" parent="globals/ParviWatchView" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="4" lineNum="23" parent="globals/ParviWatchView" pc="268435479" symbol="onLayout"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="4" lineNum="24" parent="globals/ParviWatchView" pc="268435481" symbol="onLayout"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="4" lineNum="25" parent="globals/ParviWatchView" pc="268435522" symbol="onLayout"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="4" lineNum="26" parent="globals/ParviWatchView" pc="268435541" symbol="onLayout"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="4" lineNum="27" parent="globals/ParviWatchView" pc="268435560" symbol="onLayout"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="4" lineNum="28" parent="globals/ParviWatchView" pc="268435603" symbol="onLayout"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="4" lineNum="29" parent="globals/ParviWatchView" pc="268435650" symbol="onLayout"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="5" lineNum="170" parent="globals/ParviWatchView" pc="268435698" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawHeartrate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="5" lineNum="171" parent="globals/ParviWatchView" pc="268435702" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawHeartrate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="5" lineNum="172" parent="globals/ParviWatchView" pc="268435759" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawHeartrate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="5" lineNum="179" parent="globals/ParviWatchView" pc="268435796" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawHeartrate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="6" lineNum="187" parent="globals/ParviWatchView" pc="268435846" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawCalories&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="6" lineNum="188" parent="globals/ParviWatchView" pc="268435850" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawCalories&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="6" lineNum="189" parent="globals/ParviWatchView" pc="268435873" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawCalories&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="6" lineNum="196" parent="globals/ParviWatchView" pc="268435919" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawCalories&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="123" parent="globals/ParviWatchView" pc="268435969" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="124" parent="globals/ParviWatchView" pc="268435973" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="126" parent="globals/ParviWatchView" pc="268435996" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="127" parent="globals/ParviWatchView" pc="268436003" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="128" parent="globals/ParviWatchView" pc="268436010" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="129" parent="globals/ParviWatchView" pc="268436017" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="130" parent="globals/ParviWatchView" pc="268436033" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="132" parent="globals/ParviWatchView" pc="268436057" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="133" parent="globals/ParviWatchView" pc="268436074" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="138" parent="globals/ParviWatchView" pc="268436118" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="146" parent="globals/ParviWatchView" pc="268436152" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="153" parent="globals/ParviWatchView" pc="268436205" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="8" lineNum="161" parent="globals/ParviWatchView" pc="268436255" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="9" lineNum="17" parent="globals/ParviWatchView" pc="268436307" symbol="initialize"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="9" lineNum="18" parent="globals/ParviWatchView" pc="268436309" symbol="initialize"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="40" parent="globals/ParviWatchView" pc="268436328" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="46" parent="globals/ParviWatchView" pc="268436332" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="47" parent="globals/ParviWatchView" pc="268436339" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="48" parent="globals/ParviWatchView" pc="268436356" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="49" parent="globals/ParviWatchView" pc="268436366" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="50" parent="globals/ParviWatchView" pc="268436391" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="51" parent="globals/ParviWatchView" pc="268436402" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="54" parent="globals/ParviWatchView" pc="268436418" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="55" parent="globals/ParviWatchView" pc="268436446" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="56" parent="globals/ParviWatchView" pc="268436453" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="59" parent="globals/ParviWatchView" pc="268436474" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="68" parent="globals/ParviWatchView" pc="268436539" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="69" parent="globals/ParviWatchView" pc="268436563" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="70" parent="globals/ParviWatchView" pc="268436577" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="71" parent="globals/ParviWatchView" pc="268436591" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="72" parent="globals/ParviWatchView" pc="268436605" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="11" lineNum="73" parent="globals/ParviWatchView" pc="268436619" symbol="onUpdate"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="12" lineNum="99" parent="globals/ParviWatchView" pc="268436666" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawDate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="12" lineNum="100" parent="globals/ParviWatchView" pc="268436670" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawDate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="12" lineNum="101" parent="globals/ParviWatchView" pc="268436694" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawDate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="12" lineNum="102" parent="globals/ParviWatchView" pc="268436713" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawDate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="12" lineNum="103" parent="globals/ParviWatchView" pc="268436737" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawDate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="12" lineNum="104" parent="globals/ParviWatchView" pc="268436747" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawDate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="12" lineNum="106" parent="globals/ParviWatchView" pc="268436757" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawDate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="12" lineNum="107" parent="globals/ParviWatchView" pc="268436782" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawDate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchView.mc" id="12" lineNum="114" parent="globals/ParviWatchView" pc="268436837" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawDate&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchApp.mc" id="13" lineNum="31" parent="globals" pc="268436893" symbol="getApp"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchApp.mc" id="13" lineNum="32" parent="globals" pc="268436903" symbol="getApp"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchBackground.mc" id="14" lineNum="6" parent="globals/Background" pc="268436919" symbol="&lt;init&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchBackground.mc" id="15" lineNum="8" parent="globals/Background" pc="268436938" symbol="initialize"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchBackground.mc" id="15" lineNum="9" parent="globals/Background" pc="268436942" symbol="initialize"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchBackground.mc" id="15" lineNum="13" parent="globals/Background" pc="268436963" symbol="initialize"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchBackground.mc" id="16" lineNum="16" parent="globals/Background" pc="268436984" symbol="draw"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchBackground.mc" id="16" lineNum="18" parent="globals/Background" pc="268436986" symbol="draw"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchBackground.mc" id="16" lineNum="19" parent="globals/Background" pc="268437028" symbol="draw"/>
+<entry filename="e:\\Garmin\\ParviWatch\\ParviWatch\\bin\\gen\\006-B4116-00\\source\\Rez.mcgen" id="17" lineNum="7" parent="globals/Rez" pc="268437041" symbol="&lt;init&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchApp.mc" id="18" lineNum="5" parent="globals/ParviWatchApp" pc="268437065" symbol="&lt;init&gt;"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchApp.mc" id="19" lineNum="12" parent="globals/ParviWatchApp" pc="268437084" symbol="onStart"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchApp.mc" id="20" lineNum="25" parent="globals/ParviWatchApp" pc="268437087" symbol="onSettingsChanged"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchApp.mc" id="20" lineNum="26" parent="globals/ParviWatchApp" pc="268437089" symbol="onSettingsChanged"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchApp.mc" id="21" lineNum="20" parent="globals/ParviWatchApp" pc="268437106" symbol="getInitialView"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchApp.mc" id="21" lineNum="21" parent="globals/ParviWatchApp" pc="268437108" symbol="getInitialView"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchApp.mc" id="22" lineNum="7" parent="globals/ParviWatchApp" pc="268437149" symbol="initialize"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchApp.mc" id="22" lineNum="8" parent="globals/ParviWatchApp" pc="268437151" symbol="initialize"/>
+<entry filename="E:\\Garmin\\ParviWatch\\ParviWatch\\source\\ParviWatchApp.mc" id="23" lineNum="16" parent="globals/ParviWatchApp" pc="268437170" symbol="onStop"/>
+<entry filename="e:\\Garmin\\ParviWatch\\ParviWatch\\bin\\gen\\006-B4116-00\\source\\Rez.mcgen" id="24" lineNum="22" parent="globals/Rez/Layouts" pc="268437173" symbol="WatchFace"/>
+<entry filename="e:\\Garmin\\ParviWatch\\ParviWatch\\bin\\gen\\006-B4116-00\\source\\Rez.mcgen" id="24" lineNum="23" parent="globals/Rez/Layouts" pc="268437185" symbol="WatchFace"/>
+<entry filename="e:\\Garmin\\ParviWatch\\ParviWatch\\bin\\gen\\006-B4116-00\\source\\Rez.mcgen" id="24" lineNum="25" parent="globals/Rez/Layouts" pc="268437213" symbol="WatchFace"/>
+<entry filename="e:\\Garmin\\ParviWatch\\ParviWatch\\bin\\gen\\006-B4116-00\\source\\Rez.mcgen" id="24" lineNum="27" parent="globals/Rez/Layouts" pc="268437318" symbol="WatchFace"/>
+<entry filename="e:\\Garmin\\ParviWatch\\ParviWatch\\bin\\gen\\006-B4116-00\\source\\Rez.mcgen" id="24" lineNum="29" parent="globals/Rez/Layouts" pc="268437417" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="17" symbol="&lt;globals/ParviWatchView/&lt;&gt;retroFontSmall&gt;"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="7" module="true" symbol="globals/Rez/Menus"/>
+<entry id="8389683" method="true" symbol="onSettingsChanged"/>
+<entry field="true" id="32" symbol="ColorRed"/>
+<entry field="true" id="35" symbol="MilitaryFormatTitle"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry id="12" method="true" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawCalories&gt;"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="25" symbol="retroFontSmall"/>
+<entry field="true" id="29" symbol="ColorBlue"/>
+<entry field="true" id="26" symbol="AppName"/>
+<entry id="8388633" module="true" symbol="ActivityMonitor"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry id="21" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry field="true" id="30" symbol="ColorDarkGray"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="11" method="true" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;"/>
+<entry field="true" id="19" symbol="&lt;globals/ParviWatchView/&lt;&gt;screenWidth&gt;"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry field="true" id="18" symbol="&lt;globals/ParviWatchView/&lt;&gt;screenHeight&gt;"/>
+<entry field="true" id="33" symbol="ColorWhite"/>
+<entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+<entry field="true" id="23" symbol="parviLogo"/>
+<entry field="true" id="28" symbol="ColorBlack"/>
+<entry id="13" method="true" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawDate&gt;"/>
+<entry field="true" id="16" symbol="&lt;globals/ParviWatchView/&lt;&gt;retroFont&gt;"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="15" symbol="&lt;globals/ParviWatchView/&lt;&gt;parviGreen&gt;"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry id="8389068" method="true" symbol="draw"/>
+<entry field="true" id="22" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry field="true" id="27" symbol="BackgroundColorTitle"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8390146" module="true" object="true" symbol="Background"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="14" method="true" symbol="&lt;globals/ParviWatchView/&lt;&gt;drawHeartrate&gt;"/>
+<entry field="true" id="31" symbol="ColorLightGray"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="24" symbol="retroFont"/>
+<entry field="true" id="34" symbol="ForegroundColorTitle"/>
+<entry id="20" module="true" symbol="Layouts"/>
+<entry id="10" object="true" symbol="ParviWatchView"/>
+<entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="9" object="true" symbol="ParviWatchApp"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435697" name="dc" stackId="1" startPc="268435479"/>
+<entry arg="true" endPc="268435845" name="dc" stackId="1" startPc="268435698"/>
+<entry endPc="268435844" name="heartRate" stackId="2" startPc="268435702"/>
+<entry arg="true" endPc="268435968" name="dc" stackId="1" startPc="268435846"/>
+<entry endPc="268435967" name="calories" stackId="2" startPc="268435850"/>
+<entry arg="true" endPc="268436306" name="dc" stackId="1" startPc="268435969"/>
+<entry endPc="268436305" name="battery" stackId="2" startPc="268435973"/>
+<entry endPc="268436305" name="height" stackId="3" startPc="268435973"/>
+<entry endPc="268436305" name="width" stackId="4" startPc="268435973"/>
+<entry endPc="268436305" name="x" stackId="5" startPc="268435973"/>
+<entry endPc="268436305" name="y" stackId="6" startPc="268435973"/>
+<entry endPc="268436305" name="fontHeight" stackId="7" startPc="268435973"/>
+<entry arg="true" endPc="268436665" name="dc" stackId="1" startPc="268436328"/>
+<entry endPc="268436664" name="timeFormat" stackId="2" startPc="268436332"/>
+<entry endPc="268436664" name="clockTime" stackId="3" startPc="268436332"/>
+<entry endPc="268436664" name="hours" stackId="4" startPc="268436332"/>
+<entry endPc="268436664" name="timeString" stackId="5" startPc="268436332"/>
+<entry arg="true" endPc="268436892" name="dc" stackId="1" startPc="268436666"/>
+<entry endPc="268436891" name="now" stackId="2" startPc="268436670"/>
+<entry endPc="268436891" name="date" stackId="3" startPc="268436670"/>
+<entry endPc="268436891" name="dayString" stackId="4" startPc="268436670"/>
+<entry endPc="268436891" name="dateString" stackId="5" startPc="268436670"/>
+<entry endPc="268436982" name="dictionary" stackId="1" startPc="268436942"/>
+<entry arg="true" endPc="268437040" name="dc" stackId="1" startPc="268436984"/>
+<entry arg="true" endPc="268437453" name="dc" stackId="1" startPc="268437173"/>
+<entry endPc="268437453" name="rez_cmp_local_custom_drawable_21064637781218390896" stackId="2" startPc="268437185"/>
+<entry endPc="268437453" name="rez_cmp_local_bitmap_parviLogo" stackId="3" startPc="268437185"/>
+<entry endPc="268437453" name="rez_cmp_local_text_TimeLabel" stackId="4" startPc="268437185"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="parviLogo"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ForegroundColorTitle"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="retroFontSmall"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="retroFont"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/ParviWatchView" offset="166" parentId="globals" symbolId="ParviWatchView" type="class"/>
+<dataEntry label="globals/Background" offset="333" parentId="globals" symbolId="Background" type="class"/>
+<dataEntry label="globals/Rez" offset="388" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/ParviWatchApp" offset="467" parentId="globals" symbolId="ParviWatchApp" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="546" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="593" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="632" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="663" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="710" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="821" parentId="Rez" symbolId="JsonData" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="ParviWatchView" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="ParviWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="ParviWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435697" name="onLayout" parent="ParviWatchView" startPc="268435479">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="private" endPc="268435845" name="&lt;globals/ParviWatchView/&lt;&gt;drawHeartrate&gt;" parent="ParviWatchView" startPc="268435698">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="private" endPc="268435968" name="&lt;globals/ParviWatchView/&lt;&gt;drawCalories&gt;" parent="ParviWatchView" startPc="268435846">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="ParviWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="private" endPc="268436306" name="&lt;globals/ParviWatchView/&lt;&gt;drawBattery&gt;" parent="ParviWatchView" startPc="268435969">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436327" name="initialize" parent="ParviWatchView" startPc="268436307">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="ParviWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436665" name="onUpdate" parent="ParviWatchView" startPc="268436328">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="private" endPc="268436892" name="&lt;globals/ParviWatchView/&lt;&gt;drawDate&gt;" parent="ParviWatchView" startPc="268436666">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436918" name="getApp" startPc="268436893">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436937" name="&lt;init&gt;" parent="Background" startPc="268436919">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436983" name="initialize" parent="Background" startPc="268436938">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437040" name="draw" parent="Background" startPc="268436984">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437064" name="&lt;init&gt;" parent="Rez" startPc="268437041">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437083" name="&lt;init&gt;" parent="ParviWatchApp" startPc="268437065">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437086" name="onStart" parent="ParviWatchApp" startPc="268437084">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437105" name="onSettingsChanged" parent="ParviWatchApp" startPc="268437087">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437148" name="getInitialView" parent="ParviWatchApp" startPc="268437106">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437169" name="initialize" parent="ParviWatchApp" startPc="268437149">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437172" name="onStop" parent="ParviWatchApp" startPc="268437170">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437453" name="WatchFace" parent="Layouts" startPc="268437173">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

@@ -1,0 +1,5 @@
+<layout id="WatchFace">
+    <drawable class="Background" />
+    <bitmap id="parviLogo" x="left" y="top" filename="../drawables/pixelparvi_borderless.png"/>
+    <label id="TimeLabel" x="center" y="top" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
+</layout>

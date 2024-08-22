@@ -1,0 +1,577 @@
+[ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 5; ]
+import Toybox.WatchUi;
+[ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 6; ]
+import Toybox.Activity;
+[ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 7; ]
+import Toybox.ActivityMonitor;
+[ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 8; ]
+import Toybox.Time.Gregorian;
+[ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 10; ]
+class ParviWatchView extends WatchUi.WatchFace{
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 10; ]
+    <init> {
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 11; @position = 16; ]
+    private
+    var screenHeight;
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 12; @position = 16; ]
+    private
+    var screenWidth;
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 13; @position = 16; ]
+    private
+    var parviGreen;
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 14; @position = 16; ]
+    private
+    var retroFont;
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 15; @position = 16; ]
+    private
+    var retroFontSmall;
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 17; ]
+    function initialize() as Void {
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_17_26_start:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 18 8 ]
+        %tmp.2 = getv ? :WatchFace;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_17_26_stop:
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 23; ]
+    function onLayout(dc as Dc) as Void {
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_23_40_start:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 24 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 25 8 ]
+        %tmp.10 = lgetv %dc;
+        %tmp.11 = getv function %tmp.10 :getHeight;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        putv self :screenHeight %tmp.12;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 26 8 ]
+        %tmp.13 = lgetv %dc;
+        %tmp.14 = getv function %tmp.13 :getWidth;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        putv self :screenWidth %tmp.15;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 27 8 ]
+        %tmp.16 = getm $.Toybox.Graphics;
+        %tmp.17 = getv function %tmp.16 :createColor;
+        %tmp.18 = 255;
+        %tmp.19 = 15;
+        %tmp.20 = 215;
+        %tmp.21 = 135;
+        %tmp.22 = invoke %tmp.16 %tmp.17(%tmp.18, %tmp.19, %tmp.20, %tmp.21);
+        putv self :parviGreen %tmp.22;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 28 8 ]
+        %tmp.23 = getm $.Toybox.WatchUi;
+        %tmp.24 = getv function %tmp.23 :loadResource;
+        %tmp.26 = getv ? :Rez;
+        %tmp.27 = getv %tmp.26 :Fonts;
+        %tmp.28 = getv %tmp.27 :retroFont;
+        %tmp.29 = invoke %tmp.23 %tmp.24(%tmp.28);
+        putv self :retroFont %tmp.29;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 29 8 ]
+        %tmp.30 = getm $.Toybox.WatchUi;
+        %tmp.31 = getv function %tmp.30 :loadResource;
+        %tmp.33 = getv ? :Rez;
+        %tmp.34 = getv %tmp.33 :Fonts;
+        %tmp.35 = getv %tmp.34 :retroFontSmall;
+        %tmp.36 = invoke %tmp.30 %tmp.31(%tmp.35);
+        putv self :retroFontSmall %tmp.36;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_23_40_stop:
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 36; ]
+    function onShow() as Void {
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 40; ]
+    function onUpdate(dc as Dc) as Void {
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_40_40_start:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 46 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_40_40_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_40_40_stop" ]
+        %timeFormat.1 = local;
+        %tmp.1 = "$1$:$2$";
+        lputv %timeFormat.1 %tmp.1;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 47 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_40_40_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_40_40_stop" ]
+        %clockTime.2 = local;
+        %tmp.2 = getm $.Toybox.System;
+        %tmp.3 = getv function %tmp.2 :getClockTime;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %clockTime.2 %tmp.4;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 48 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_40_40_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_40_40_stop" ]
+        %hours.3 = local;
+        %tmp.5 = lgetv %clockTime.2;
+        %tmp.6 = getv %tmp.5 :hour;
+        lputv %hours.3 %tmp.6;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 49 8 ]
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_49_8_if_stmt:
+        %tmp.7 = getm $.Toybox.System;
+        %tmp.8 = getv function %tmp.7 :getDeviceSettings;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = getv %tmp.9 :is24Hour;
+        %tmp.11 = not %tmp.10;
+        bf %tmp.11 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_49_8_if_false;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_49_8_if_true:
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_49_50_start:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 50 12 ]
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_50_12_if_stmt:
+        %tmp.13 = lgetv %hours.3;
+        %tmp.14 = 12;
+        %tmp.15 = gt %tmp.13 %tmp.14;
+        bf %tmp.15 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_50_12_if_end;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_50_12_if_true:
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_50_28_start:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 51 16 ]
+        %tmp.17 = lgetv %hours.3;
+        %tmp.18 = 12;
+        %tmp.19 = sub %tmp.17 %tmp.18;
+        lputv %hours.3 %tmp.19;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_50_28_stop:
+        goto @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_50_12_if_end;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_50_12_if_end:
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_49_50_stop:
+        goto @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_49_8_if_end;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_49_8_if_false:
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_53_15_start:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 54 12 ]
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_54_12_if_stmt:
+        %tmp.20 = self;
+        %tmp.21 = getv function %tmp.20 :getApp;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        %tmp.23 = getv function %tmp.22 :getProperty;
+        %tmp.24 = "UseMilitaryFormat";
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        bf %tmp.25 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_54_12_if_end;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_54_12_if_true:
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_54_59_start:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 55 16 ]
+        %tmp.26 = "$1$$2$";
+        lputv %timeFormat.1 %tmp.26;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 56 16 ]
+        %tmp.27 = lgetv %hours.3;
+        %tmp.28 = getv function %tmp.27 :format;
+        %tmp.29 = "%02d";
+        %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
+        lputv %hours.3 %tmp.30;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_54_59_stop:
+        goto @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_54_12_if_end;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_54_12_if_end:
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_53_15_stop:
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_49_8_if_end:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 59 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_40_40_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_40_40_stop" ]
+        %timeString.4 = local;
+        %tmp.31 = getm $.Toybox.Lang;
+        %tmp.32 = getv function %tmp.31 :format;
+        %tmp.34 = lgetv %timeFormat.1;
+        %tmp.35 = newa 2;
+        %tmp.37 = lgetv %hours.3;
+        %tmp.38 = dup %tmp.35;
+        %tmp.39 = aputv %tmp.38 0 %tmp.37;
+        %tmp.40 = lgetv %clockTime.2;
+        %tmp.41 = getv %tmp.40 :min;
+        %tmp.42 = getv function %tmp.41 :format;
+        %tmp.43 = "%02d";
+        %tmp.44 = invoke %tmp.41 %tmp.42(%tmp.43);
+        %tmp.45 = dup %tmp.39;
+        %tmp.46 = aputv %tmp.45 1 %tmp.44;
+        %tmp.47 = invoke %tmp.31 %tmp.32(%tmp.34, %tmp.46);
+        lputv %timeString.4 %tmp.47;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 68 8 ]
+        %tmp.49 = getv ? :View;
+        %tmp.50 = getv function %tmp.49 :onUpdate;
+        %tmp.52 = lgetv %dc;
+        invoke %tmp.49 %tmp.50(%tmp.52);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 69 8 ]
+        %tmp.53 = self;
+        %tmp.54 = getv function %tmp.53 :drawDate;
+        %tmp.56 = lgetv %dc;
+        invoke %tmp.53 %tmp.54(%tmp.56);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 70 8 ]
+        %tmp.57 = self;
+        %tmp.58 = getv function %tmp.57 :drawBattery;
+        %tmp.60 = lgetv %dc;
+        invoke %tmp.57 %tmp.58(%tmp.60);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 71 8 ]
+        %tmp.61 = self;
+        %tmp.62 = getv function %tmp.61 :drawHeartrate;
+        %tmp.64 = lgetv %dc;
+        invoke %tmp.61 %tmp.62(%tmp.64);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 72 8 ]
+        %tmp.65 = self;
+        %tmp.66 = getv function %tmp.65 :drawCalories;
+        %tmp.68 = lgetv %dc;
+        invoke %tmp.65 %tmp.66(%tmp.68);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 73 8 ]
+        %tmp.69 = lgetv %dc;
+        %tmp.70 = getv function %tmp.69 :drawText;
+        %tmp.72 = getv ? :screenWidth;
+        %tmp.73 = 2;
+        %tmp.74 = div %tmp.72 %tmp.73;
+        %tmp.75 = 10;
+        %tmp.77 = getv ? :retroFont;
+        %tmp.79 = lgetv %timeString.4;
+        %tmp.80 = getm $.Toybox.Graphics;
+        %tmp.81 = getv %tmp.80 :TEXT_JUSTIFY_CENTER;
+        %tmp.82 = getm $.Toybox.Graphics;
+        %tmp.83 = getv %tmp.82 :TEXT_JUSTIFY_VCENTER;
+        %tmp.84 = bitor %tmp.81 %tmp.83;
+        invoke %tmp.69 %tmp.70(%tmp.74, %tmp.75, %tmp.77, %tmp.79, %tmp.84);
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_40_40_stop:
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 88; ]
+    function onHide() as Void {
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 92; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 96; ]
+    function onEnterSleep() as Void {
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 99; ]
+    private
+    function drawDate(dc) {
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_99_34_start:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 100 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.4 = getv ? :retroFont;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 101 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_99_34_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_99_34_stop" ]
+        %now.1 = local;
+        %tmp.6 = getv ? :Time;
+        %tmp.7 = getv function %tmp.6 :now;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %now.1 %tmp.8;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 102 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_99_34_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_99_34_stop" ]
+        %date.2 = local;
+        %tmp.9 = getm $.Toybox.Time.Gregorian;
+        %tmp.10 = getv function %tmp.9 :info;
+        %tmp.12 = lgetv %now.1;
+        %tmp.14 = getv ? :Time;
+        %tmp.15 = getv %tmp.14 :FORMAT_MEDIUM;
+        %tmp.16 = invoke %tmp.9 %tmp.10(%tmp.12, %tmp.15);
+        lputv %date.2 %tmp.16;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 103 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_99_34_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_99_34_stop" ]
+        %dayString.3 = local;
+        %tmp.17 = lgetv %date.2;
+        %tmp.18 = getv %tmp.17 :day_of_week;
+        lputv %dayString.3 %tmp.18;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 104 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_99_34_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_99_34_stop" ]
+        %dateString.4 = local;
+        %tmp.19 = lgetv %date.2;
+        %tmp.20 = getv %tmp.19 :day;
+        lputv %dateString.4 %tmp.20;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 106 8 ]
+        %tmp.21 = lgetv %dc;
+        %tmp.22 = getv function %tmp.21 :setColor;
+        %tmp.24 = getv ? :parviGreen;
+        %tmp.25 = getm $.Toybox.Graphics;
+        %tmp.26 = getv %tmp.25 :COLOR_TRANSPARENT;
+        invoke %tmp.21 %tmp.22(%tmp.24, %tmp.26);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 107 8 ]
+        %tmp.27 = lgetv %dc;
+        %tmp.28 = getv function %tmp.27 :drawText;
+        %tmp.30 = getv ? :screenWidth;
+        %tmp.31 = 37;
+        %tmp.32 = sub %tmp.30 %tmp.31;
+        %tmp.34 = getv ? :screenHeight;
+        %tmp.35 = 95;
+        %tmp.36 = sub %tmp.34 %tmp.35;
+        %tmp.38 = getv ? :retroFont;
+        %tmp.40 = lgetv %dayString.3;
+        %tmp.41 = getm $.Toybox.Graphics;
+        %tmp.42 = getv %tmp.41 :TEXT_JUSTIFY_CENTER;
+        %tmp.43 = getm $.Toybox.Graphics;
+        %tmp.44 = getv %tmp.43 :TEXT_JUSTIFY_VCENTER;
+        %tmp.45 = bitor %tmp.42 %tmp.44;
+        invoke %tmp.27 %tmp.28(%tmp.32, %tmp.36, %tmp.38, %tmp.40, %tmp.45);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 114 8 ]
+        %tmp.46 = lgetv %dc;
+        %tmp.47 = getv function %tmp.46 :drawText;
+        %tmp.49 = getv ? :screenWidth;
+        %tmp.50 = 35;
+        %tmp.51 = sub %tmp.49 %tmp.50;
+        %tmp.53 = getv ? :screenHeight;
+        %tmp.54 = 60;
+        %tmp.55 = sub %tmp.53 %tmp.54;
+        %tmp.57 = getv ? :retroFont;
+        %tmp.59 = lgetv %dateString.4;
+        %tmp.60 = getm $.Toybox.Graphics;
+        %tmp.61 = getv %tmp.60 :TEXT_JUSTIFY_CENTER;
+        %tmp.62 = getm $.Toybox.Graphics;
+        %tmp.63 = getv %tmp.62 :TEXT_JUSTIFY_VCENTER;
+        %tmp.64 = bitor %tmp.61 %tmp.63;
+        invoke %tmp.46 %tmp.47(%tmp.51, %tmp.55, %tmp.57, %tmp.59, %tmp.64);
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_99_34_stop:
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 123; ]
+    private
+    function drawBattery(dc) {
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_start:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 124 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_stop" ]
+        %battery.1 = local;
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :getSystemStats;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = getv %tmp.3 :battery;
+        lputv %battery.1 %tmp.4;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 126 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_stop" ]
+        %height.2 = local;
+        %tmp.5 = 16;
+        lputv %height.2 %tmp.5;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 127 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_stop" ]
+        %width.3 = local;
+        %tmp.6 = 24;
+        lputv %width.3 %tmp.6;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 128 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_stop" ]
+        %x.4 = local;
+        %tmp.7 = 60;
+        lputv %x.4 %tmp.7;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 129 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_stop" ]
+        %y.5 = local;
+        %tmp.9 = getv ? :screenHeight;
+        %tmp.10 = 105;
+        %tmp.11 = sub %tmp.9 %tmp.10;
+        lputv %y.5 %tmp.11;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 130 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_stop" ]
+        %fontHeight.6 = local;
+        %tmp.12 = lgetv %dc;
+        %tmp.13 = getv function %tmp.12 :getFontHeight;
+        %tmp.14 = getm $.Toybox.Graphics;
+        %tmp.15 = getv %tmp.14 :FONT_TINY;
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        %tmp.17 = 15;
+        %tmp.18 = sub %tmp.16 %tmp.17;
+        lputv %fontHeight.6 %tmp.18;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 132 8 ]
+        %tmp.19 = lgetv %dc;
+        %tmp.20 = getv function %tmp.19 :setPenWidth;
+        %tmp.21 = 2;
+        invoke %tmp.19 %tmp.20(%tmp.21);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 133 8 ]
+        %tmp.22 = lgetv %dc;
+        %tmp.23 = getv function %tmp.22 :setColor;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_134_12_begin:
+        %tmp.25 = lgetv %battery.1;
+        %tmp.26 = 20;
+        %tmp.27 = lte %tmp.25 %tmp.26;
+        bf %tmp.27 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_134_12_false;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_134_12_true:
+        %tmp.28 = getm $.Toybox.Graphics;
+        %tmp.29 = getv %tmp.28 :COLOR_DK_RED;
+        push %tmp.29;
+        goto @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_134_12_end;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_134_12_false:
+        %tmp.31 = getv ? :parviGreen;
+        push %tmp.31;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_134_12_end:
+        %tmp.32 = phi [%tmp.27 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_134_12_begin] [%tmp.29 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_134_12_true] [%tmp.31 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_134_12_false] [%tmp.32 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_134_12_end];
+        %tmp.33 = getm $.Toybox.Graphics;
+        %tmp.34 = getv %tmp.33 :COLOR_TRANSPARENT;
+        invoke %tmp.22 %tmp.23(%tmp.32, %tmp.34);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 138 8 ]
+        %tmp.35 = lgetv %dc;
+        %tmp.36 = getv function %tmp.35 :drawRoundedRectangle;
+        %tmp.38 = lgetv %x.4;
+        %tmp.39 = 35;
+        %tmp.40 = sub %tmp.38 %tmp.39;
+        %tmp.42 = lgetv %y.5;
+        %tmp.44 = lgetv %fontHeight.6;
+        %tmp.45 = add %tmp.42 %tmp.44;
+        %tmp.47 = lgetv %width.3;
+        %tmp.49 = lgetv %height.2;
+        %tmp.50 = 2;
+        invoke %tmp.35 %tmp.36(%tmp.40, %tmp.45, %tmp.47, %tmp.49, %tmp.50);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 146 8 ]
+        %tmp.51 = lgetv %dc;
+        %tmp.52 = getv function %tmp.51 :drawLine;
+        %tmp.54 = lgetv %x.4;
+        %tmp.55 = 10;
+        %tmp.56 = sub %tmp.54 %tmp.55;
+        %tmp.58 = lgetv %y.5;
+        %tmp.60 = lgetv %fontHeight.6;
+        %tmp.61 = add %tmp.58 %tmp.60;
+        %tmp.62 = 3;
+        %tmp.63 = add %tmp.61 %tmp.62;
+        %tmp.65 = lgetv %x.4;
+        %tmp.66 = 10;
+        %tmp.67 = sub %tmp.65 %tmp.66;
+        %tmp.69 = lgetv %y.5;
+        %tmp.71 = lgetv %fontHeight.6;
+        %tmp.72 = add %tmp.69 %tmp.71;
+        %tmp.74 = lgetv %height.2;
+        %tmp.75 = add %tmp.72 %tmp.74;
+        %tmp.76 = 3;
+        %tmp.77 = sub %tmp.75 %tmp.76;
+        invoke %tmp.51 %tmp.52(%tmp.56, %tmp.63, %tmp.67, %tmp.77);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 153 8 ]
+        %tmp.78 = lgetv %dc;
+        %tmp.79 = getv function %tmp.78 :fillRectangle;
+        %tmp.81 = lgetv %x.4;
+        %tmp.82 = 35;
+        %tmp.83 = sub %tmp.81 %tmp.82;
+        %tmp.84 = 1;
+        %tmp.85 = add %tmp.83 %tmp.84;
+        %tmp.87 = lgetv %y.5;
+        %tmp.89 = lgetv %fontHeight.6;
+        %tmp.90 = add %tmp.87 %tmp.89;
+        %tmp.92 = lgetv %width.3;
+        %tmp.93 = 2;
+        %tmp.94 = sub %tmp.92 %tmp.93;
+        %tmp.96 = lgetv %battery.1;
+        %tmp.97 = mul %tmp.94 %tmp.96;
+        %tmp.98 = 100;
+        %tmp.99 = div %tmp.97 %tmp.98;
+        %tmp.101 = lgetv %height.2;
+        invoke %tmp.78 %tmp.79(%tmp.85, %tmp.90, %tmp.99, %tmp.101);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 161 8 ]
+        %tmp.102 = lgetv %dc;
+        %tmp.103 = getv function %tmp.102 :drawText;
+        %tmp.105 = lgetv %x.4;
+        %tmp.107 = lgetv %y.5;
+        %tmp.108 = 10;
+        %tmp.109 = add %tmp.107 %tmp.108;
+        %tmp.111 = getv ? :retroFont;
+        %tmp.112 = lgetv %battery.1;
+        %tmp.113 = getv function %tmp.112 :format;
+        %tmp.114 = "%d";
+        %tmp.115 = invoke %tmp.112 %tmp.113(%tmp.114);
+        %tmp.116 = getm $.Toybox.Graphics;
+        %tmp.117 = getv %tmp.116 :TEXT_JUSTIFY_RIGHT;
+        %tmp.118 = getm $.Toybox.Graphics;
+        %tmp.119 = getv %tmp.118 :TEXT_JUSTIFY_VCENTER;
+        %tmp.120 = bitor %tmp.117 %tmp.119;
+        invoke %tmp.102 %tmp.103(%tmp.105, %tmp.109, %tmp.111, %tmp.115, %tmp.120);
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_123_37_stop:
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 170; ]
+    private
+    function drawHeartrate(dc) {
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_170_39_start:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 171 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_170_39_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_170_39_stop" ]
+        %heartRate.1 = local;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_171_24_begin:
+        %tmp.1 = getm $.Toybox.Activity;
+        %tmp.2 = getv function %tmp.1 :getActivityInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = getv %tmp.3 :currentHeartRate;
+        %tmp.5 = null;
+        %tmp.6 = eq %tmp.4 %tmp.5;
+        bf %tmp.6 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_171_24_false;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_171_24_true:
+        %tmp.7 = "--";
+        push %tmp.7;
+        goto @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_171_24_end;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_171_24_false:
+        %tmp.8 = getm $.Toybox.Activity;
+        %tmp.9 = getv function %tmp.8 :getActivityInfo;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        %tmp.11 = getv %tmp.10 :currentHeartRate;
+        push %tmp.11;
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_171_24_end:
+        %tmp.12 = phi [%tmp.6 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_171_24_begin] [%tmp.7 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_171_24_true] [%tmp.11 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_171_24_false] [%tmp.12 @E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_171_24_end];
+        lputv %heartRate.1 %tmp.12;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 172 8 ]
+        %tmp.13 = lgetv %dc;
+        %tmp.14 = getv function %tmp.13 :drawText;
+        %tmp.15 = 70;
+        %tmp.16 = 20;
+        %tmp.18 = getv ? :retroFont;
+        %tmp.20 = lgetv %heartRate.1;
+        %tmp.21 = getm $.Toybox.Graphics;
+        %tmp.22 = getv %tmp.21 :TEXT_JUSTIFY_RIGHT;
+        %tmp.23 = getm $.Toybox.Graphics;
+        %tmp.24 = getv %tmp.23 :TEXT_JUSTIFY_VCENTER;
+        %tmp.25 = bitor %tmp.22 %tmp.24;
+        invoke %tmp.13 %tmp.14(%tmp.15, %tmp.16, %tmp.18, %tmp.20, %tmp.25);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 179 8 ]
+        %tmp.26 = lgetv %dc;
+        %tmp.27 = getv function %tmp.26 :drawText;
+        %tmp.28 = 50;
+        %tmp.29 = 40;
+        %tmp.31 = getv ? :retroFont;
+        %tmp.32 = 9829;
+        %tmp.33 = getv function %tmp.32 :toChar;
+        %tmp.34 = invoke %tmp.32 %tmp.33();
+        %tmp.35 = getm $.Toybox.Graphics;
+        %tmp.36 = getv %tmp.35 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29, %tmp.31, %tmp.34, %tmp.36);
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_170_39_stop:
+    }
+    [ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 187; ]
+    private
+    function drawCalories(dc) {
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_187_38_start:
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 188 8 ]
+        [ "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_187_38_start" "E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_187_38_stop" ]
+        %calories.1 = local;
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = getv %tmp.3 :calories;
+        lputv %calories.1 %tmp.4;
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 189 8 ]
+        %tmp.5 = lgetv %dc;
+        %tmp.6 = getv function %tmp.5 :drawText;
+        %tmp.8 = getv ? :screenWidth;
+        %tmp.9 = 7;
+        %tmp.10 = sub %tmp.8 %tmp.9;
+        %tmp.11 = 15;
+        %tmp.13 = getv ? :retroFontSmall;
+        %tmp.15 = lgetv %calories.1;
+        %tmp.16 = getm $.Toybox.Graphics;
+        %tmp.17 = getv %tmp.16 :TEXT_JUSTIFY_RIGHT;
+        %tmp.18 = getm $.Toybox.Graphics;
+        %tmp.19 = getv %tmp.18 :TEXT_JUSTIFY_VCENTER;
+        %tmp.20 = bitor %tmp.17 %tmp.19;
+        invoke %tmp.5 %tmp.6(%tmp.10, %tmp.11, %tmp.13, %tmp.15, %tmp.20);
+[ "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc" 196 8 ]
+        %tmp.21 = lgetv %dc;
+        %tmp.22 = getv function %tmp.21 :drawText;
+        %tmp.24 = getv ? :screenWidth;
+        %tmp.25 = 7;
+        %tmp.26 = sub %tmp.24 %tmp.25;
+        %tmp.27 = 40;
+        %tmp.29 = getv ? :retroFontSmall;
+        %tmp.30 = "kcal";
+        %tmp.31 = getm $.Toybox.Graphics;
+        %tmp.32 = getv %tmp.31 :TEXT_JUSTIFY_RIGHT;
+        %tmp.33 = getm $.Toybox.Graphics;
+        %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_VCENTER;
+        %tmp.35 = bitor %tmp.32 %tmp.34;
+        invoke %tmp.21 %tmp.22(%tmp.26, %tmp.27, %tmp.29, %tmp.30, %tmp.35);
+E_Garmin_ParviWatch_ParviWatch_source_ParviWatchView_mc_187_38_stop:
+    }
+}
+[ @file = "E:\Garmin\ParviWatch\ParviWatch\source\ParviWatchView.mc"; @line = 1; ]
+<init> {
+}

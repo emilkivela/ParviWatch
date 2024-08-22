@@ -1,0 +1,4 @@
+<fonts>
+    <font id="retroFont" filename="retrofont.fnt"/>
+    <font id="retroFontSmall" filename="retrofont_smaller.fnt"/>
+</fonts>
