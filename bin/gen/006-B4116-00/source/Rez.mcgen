@@ -20,13 +20,13 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_21064637781218390896 = new Background();
+            var rez_cmp_local_custom_drawable_58773232814169835411 = new Background();
 
             var rez_cmp_local_bitmap_parviLogo = new WatchUi.Bitmap({:identifier=>"parviLogo", :rezId=>$.Rez.Drawables.parviLogo, :locX=>WatchUi.LAYOUT_HALIGN_LEFT, :locY=>WatchUi.LAYOUT_VALIGN_TOP});
 
             var rez_cmp_local_text_TimeLabel = new WatchUi.Text({:identifier=>"TimeLabel", :locX=>(320 * 0.5), :locY=>WatchUi.LAYOUT_VALIGN_TOP, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
 
-            return [rez_cmp_local_custom_drawable_21064637781218390896, rez_cmp_local_bitmap_parviLogo, rez_cmp_local_text_TimeLabel] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_58773232814169835411, rez_cmp_local_bitmap_parviLogo, rez_cmp_local_text_TimeLabel] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

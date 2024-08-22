@@ -49,10 +49,10 @@ module Rez {
 e_Garmin_ParviWatch_ParviWatch_bin_gen_006_B4116_00_source_Rez_mcgen_22_73_start:
 [ "e:\Garmin\ParviWatch\ParviWatch\bin\gen\006-B4116-00\source\Rez.mcgen" 23 12 ]
             [ "e_Garmin_ParviWatch_ParviWatch_bin_gen_006_B4116_00_source_Rez_mcgen_22_73_start" "e_Garmin_ParviWatch_ParviWatch_bin_gen_006_B4116_00_source_Rez_mcgen_22_73_stop" ]
-            %rez_cmp_local_custom_drawable_21064637781218390896.1 = local;
+            %rez_cmp_local_custom_drawable_58773232814169835411.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_21064637781218390896.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_58773232814169835411.1 %tmp.1;
 [ "e:\Garmin\ParviWatch\ParviWatch\bin\gen\006-B4116-00\source\Rez.mcgen" 25 12 ]
             [ "e_Garmin_ParviWatch_ParviWatch_bin_gen_006_B4116_00_source_Rez_mcgen_22_73_start" "e_Garmin_ParviWatch_ParviWatch_bin_gen_006_B4116_00_source_Rez_mcgen_22_73_stop" ]
             %rez_cmp_local_bitmap_parviLogo.2 = local;
@@ -117,7 +117,7 @@ e_Garmin_ParviWatch_ParviWatch_bin_gen_006_B4116_00_source_Rez_mcgen_22_73_start
             lputv %rez_cmp_local_text_TimeLabel.3 %tmp.35;
 [ "e:\Garmin\ParviWatch\ParviWatch\bin\gen\006-B4116-00\source\Rez.mcgen" 29 12 ]
             %tmp.70 = newa Array<WatchUi.Drawable> 3;
-            %tmp.72 = lgetv %rez_cmp_local_custom_drawable_21064637781218390896.1;
+            %tmp.72 = lgetv %rez_cmp_local_custom_drawable_58773232814169835411.1;
             %tmp.73 = dup %tmp.70;
             %tmp.74 = aputv %tmp.73 0 %tmp.72;
             %tmp.76 = lgetv %rez_cmp_local_bitmap_parviLogo.2;
